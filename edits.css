@@ -6,7 +6,7 @@
 {
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
+    overflow-x: hidden;
     box-sizing: border-box;
     border: none;
     all: none;
@@ -20,14 +20,16 @@ body
     align-items: center;
 
     font-family: Poppins , sans-serif;
+
+    background-color: rgba(0, 0, 0, 0.632);
 }
 
 .navbar
 {
     position: absolute;
     z-index: 1;
-    top: 10px;
-    left: 10px;
+    top: 50px;
+    left: 50px;
 
     padding: 10px;
     
@@ -43,92 +45,39 @@ body
 
 .container
 {
-    position: relative;
-    width: 100vw;
-    height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    margin-top: 40px;
-
-    overflow: hidden;
+  margin-top: 100px;
 }
 
 .image
 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    animation: cycle 6.3s linear infinite 0s forwards;
-    animation-play-state: paused;
+  width: 500px;
+  height: 500px;
 
+  margin: 20px;
+
+  box-shadow: 4px 4px 18px black;
+
+  object-fit: fill;
 }
 
-.container:hover .image
+@media only screen and (max-width: 500px)
 {
-    animation-play-state: running;
+
+  .image-1 ,.image-2 ,.image-6 ,.image-7 ,.image-9 
+{
+  width: 300px;
+  height: 340px;
 }
 
-.image-1 {
-    z-index: 17;
-  }
-  
-  .image-2 {
-    z-index: 16;
-    animation-delay: .7s;
-  }
-  
-  .image-3 {
-    z-index: 15;
-    animation-delay: 1.4s;
-  }
-  
-  .image-4 {
-    z-index: 14;
-    animation-delay: 2.1s;
-  }
-  
-  .image-5 {
-    z-index: 13;
-    animation-delay: 2.8s;
-  }
-  
-  .image-6 {
-    z-index: 12;
-    animation-delay: 3.5s;
-  }
-  
-  .image-7 {
-    z-index: 11;
-    animation-delay: 4.2s;
-  }
-  
-  .image-8 {
-    z-index: 10;
-    animation-delay: 4.9s;
-  }
-  
-  .image-9 {
-    z-index: 9;
-    animation-delay: 5.6s;
-  }
-  
-  .image-10 {
-    z-index: 8;
-    animation-delay: 6.3s;
-  }
-
-
-@keyframes cycle
+.image-3 ,.image-4 ,.image-5 ,.image-8,.image-10
 {
-    from{
-        visibility: visible;
-        z-index: 18;
-    }
-    to
-    {
-        visibility: hidden;
-        z-index: 0;
-    }
+  width: 340px;
+  height: 300px;
+}
+
 }
