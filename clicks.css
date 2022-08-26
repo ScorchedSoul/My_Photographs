@@ -1,0 +1,172 @@
+/* CSS STYLING */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: none;
+    all: none;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Poppins , sans-serif;
+}
+
+.navbar
+{
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+
+    padding: 10px;
+    
+}
+
+.nav-text
+{
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+
+    margin-top: 40px;
+}
+
+.image
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    object-fit: contain;
+    animation: cycle 11.9s linear infinite 0s forwards;
+    animation-play-state: paused;
+
+}
+
+.container:hover .image
+{
+    animation-play-state: running;
+}
+
+.image-1 {
+    z-index: 17;
+    animation-delay: 0.7s;
+  }
+  
+  .image-2 {
+    z-index: 16;
+    animation-delay: 1.4s;
+  }
+  
+  .image-3 {
+    z-index: 15;
+    animation-delay: 2.1s;
+  }
+  
+  .image-4 {
+    z-index: 14;
+    animation-delay: 2.8s;
+  }
+  
+  .image-5 {
+    z-index: 13;
+    animation-delay: 3.5s;
+  }
+  
+  .image-6 {
+    z-index: 12;
+    animation-delay: 4.2s;
+  }
+  
+  .image-7 {
+    z-index: 11;
+    animation-delay: 4.9s;
+  }
+  
+  .image-8 {
+    z-index: 10;
+    animation-delay: 5.6s;
+  }
+  
+  .image-9 {
+    z-index: 9;
+    animation-delay: 6.3s;
+  }
+  
+  .image-10 {
+    z-index: 8;
+    animation-delay: 7.0s;
+  }
+
+  .image-11 {
+    z-index: 7;
+    animation-delay: 7.7;
+  }
+  
+  .image-12 {
+    z-index: 6;
+    animation-delay: 8.4s;
+  }
+  
+  .image-13 {
+    z-index: 5;
+    animation-delay: 9.1s;
+  }
+  
+  .image-14 {
+    z-index: 4;
+    animation-delay: 9.8s;
+  }
+  
+  .image-15 {
+    z-index: 3;
+    animation-delay: 10.5s;
+  }
+  
+  .image-16 {
+    z-index: 2;
+    animation-delay: 11.2s;
+  }
+  
+  .image-17 {
+    z-index: 1;
+    animation-delay: 11.9s;
+  }
+
+
+
+@keyframes cycle
+{
+    from{
+        visibility: visible;
+        z-index: 18;
+    }
+    to
+    {
+        visibility: hidden;
+        z-index: 0;
+    }
+}
